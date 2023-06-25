@@ -1,0 +1,103 @@
+.title {
+    margin: 50px 24px 61px;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #102A42;
+    position: relative;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+.title::after {
+    content: '';
+    display: block;
+    width: 130px;
+    height: 5px;
+    background-color: #49A6E9;
+    position: absolute;
+    left: 50%;
+    top: 70px;
+    transform: translate(-50%, -50%);
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 35px;
+    border: none;
+}
+
+.card img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    margin-top: 30px;
+}
+
+.card-title {
+    margin-top: 15px;
+    margin-bottom: 25px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #617D98;
+}
+
+.card-body .btn {
+    font-size: 0.75rem;
+    color: #fff;
+    background-color: #49A6E9;
+    border-radius: 15px;
+    padding: 5px 10px;
+    letter-spacing: 1.2px;
+    transition: all 0.5s;
+}
+
+.card-body .btn:hover {
+    background-color: #49A6E9;
+    color: #fff;
+    opacity: 0.8;
+}
+
+.pag {
+    margin-top: 35px;
+}
+
+.btn-page {
+    width: 32px;
+    height: 32px;
+    line-height: 1;
+    color: #000;
+    background-color: hsl(205, 90%, 76%);
+    border-radius: 5px;
+    text-align: center;
+    margin: 5px;
+    border: none;
+    padding: 0;
+}
+
+#pag-content .btn-page:hover {
+    color: #000;
+    background-color: hsl(205, 90%, 76%);
+}
+
+.btn-page.active {
+    color: #fff;
+    background-color: hsl(205, 86%, 17%);
+}
+
+#pag-content .btn-page.active:hover {
+    color: #fff;
+    background-color: hsl(205, 86%, 17%);
+}
+
+#pag-content .btn-pre,
+#pag-content .btn-next {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    letter-spacing: 2px;
+    border: none;
+    margin: 5px;
+    padding: 0;
+}
